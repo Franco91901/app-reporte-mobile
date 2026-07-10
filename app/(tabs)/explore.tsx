@@ -11,7 +11,7 @@ import {
 } from "react-native";
 import MapView, { Marker, Circle, PROVIDER_GOOGLE } from "react-native-maps";
 import { SafeAreaView } from "react-native-safe-area-context";
-import api from "@/src/services/api";
+import api, { API_URL } from "@/src/services/api";
 import { votarIncidente } from "@/src/services/incidenteService";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -348,7 +348,7 @@ export default function ExploreSearchScreen() {
                   <Image
                     key={selectedInci.id}
                     source={{
-                      uri: `http://192.168.18.9:8080/uploads/${selectedInci.fotoUrl.trim()}`,
+                      uri: `${API_URL}/uploads/${selectedInci.fotoUrl.trim()}`,
                     }}
                     style={styles.detailImage}
                     resizeMode="cover"

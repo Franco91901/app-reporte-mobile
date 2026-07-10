@@ -28,6 +28,17 @@ export default function RegisterScreen({ onBackToLogin }) {
       return;
     }
 
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert("Ingresa un correo electrónico válido");
+      return;
+    }
+
+    if (password.length < 6) {
+      alert("La contraseña debe tener mínimo 6 caracteres");
+      return;
+    }
+
     setLoading(true);
     try {
       await register(nombres, apellidos, email, password);

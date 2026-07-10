@@ -2,8 +2,10 @@ import axios from "axios";
 import { getToken, removeToken } from "./tokenService";
 import { router } from "expo-router";
 
+export const API_URL = "http://192.168.18.9:8080";
+
 const api = axios.create({
-  baseURL: "http://192.168.18.9:8080/api",
+  baseURL: `${API_URL}/api`,
 });
 
 // INTERCEPTOR DE PETICIÓN

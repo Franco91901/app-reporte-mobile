@@ -14,7 +14,7 @@ import MapView, { Marker, PROVIDER_GOOGLE } from "react-native-maps";
 import * as Location from "expo-location";
 import { Ionicons } from "@expo/vector-icons";
 import { useFocusEffect } from "expo-router";
-import api from "../services/api";
+import api, { API_URL } from "../services/api";
 import { votarIncidente } from "../services/incidenteService";
 
 export default function MapComponent({ onOpenModal }) {
@@ -268,7 +268,7 @@ export default function MapComponent({ onOpenModal }) {
                       <Image
                         key={detalleIncidente.id}
                         source={{
-                          uri: `http://192.168.18.9:8080/uploads/${detalleIncidente.fotoUrl.trim()}`,
+                          uri: `${API_URL}/uploads/${detalleIncidente.fotoUrl.trim()}`,
                         }}
                         style={styles.detailImage}
                         resizeMode="cover"
