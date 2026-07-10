@@ -405,11 +405,6 @@ const styles = StyleSheet.create({
     fontSize: 10,
     color: "#999",
   },
-  itemDesc: {
-    fontSize: 13,
-    color: "#666",
-    lineHeight: 18,
-  },
   closeBtn: {
     backgroundColor: "#F1F3F5",
     padding: 16,
@@ -422,9 +417,6 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 14,
     letterSpacing: 1,
-  },
-  detailContainer: {
-    flex: 1,
   },
   backBtn: {
     flexDirection: "row",
@@ -463,26 +455,11 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: "bold",
   },
-  detailDate: {
-    fontSize: 12,
-    color: "#999",
-  },
   detailDescription: {
     fontSize: 16,
     color: "#444",
     lineHeight: 22,
     marginBottom: 15,
-  },
-  imagePlaceholder: {
-    width: "100%",
-    height: 150,
-    backgroundColor: "#F0F0F0",
-    borderRadius: 15,
-    justifyContent: "center",
-    alignItems: "center",
-    borderWidth: 1,
-    borderColor: "#E0E0E0",
-    borderStyle: "dashed",
   },
   imageContainer: {
     width: "100%",
@@ -522,23 +499,6 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     padding: 8,
     position: "relative",
-  },
-  voteBadge: {
-    position: "absolute",
-    top: -5,
-    right: -5,
-    backgroundColor: "#FF3B30",
-    borderRadius: 10,
-    minWidth: 20,
-    height: 20,
-    justifyContent: "center",
-    alignItems: "center",
-    paddingHorizontal: 4,
-  },
-  voteBadgeText: {
-    color: "white",
-    fontSize: 10,
-    fontWeight: "bold",
   },
   voteButton: {
     flexDirection: "row",

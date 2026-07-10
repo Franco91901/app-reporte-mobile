@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "expo-router";
-import AsyncStorage from "@react-native-async-storage/async-storage";
 import LoginScreen from "../src/screens/LoginScreen";
 import RegisterScreen from "../src/screens/RegisterScreen";
 import { ActivityIndicator, View } from "react-native";

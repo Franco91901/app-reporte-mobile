@@ -9,7 +9,6 @@ import {
 } from "react-native";
 import { login } from "../services/authService";
 import { SafeAreaView } from "react-native-safe-area-context";
-import axios from "axios";
 import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 
