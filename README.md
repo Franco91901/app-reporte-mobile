@@ -38,8 +38,10 @@ explorar incidentes en mapa, y votar para dar visibilidad.
 IP del backend en `src/services/api.js`:
 
 ```javascript
-const API_BASE = "http://<TU_IP>:8080/api";
+export const API_URL = "http://<TU_IP>:8080";
 ```
+
+La URL se usa como `baseURL: \`${API_URL}/api\`` en el axios instance y como `\`${API_URL}/uploads/\${fotoUrl}\`` para acceder a fotos.
 
 ## Levantar
 
